@@ -22,7 +22,7 @@ const AdoptPet = () => {
         >
           <Typography
             sx={{
-              fontFamily: "cursive",
+              fontFamily: "sans-serif",
               fontWeight: "bold",
               fontSize: "24px",
               color: "#3D405B",
@@ -70,7 +70,7 @@ const AdoptPet = () => {
                     <Grid item xs={12} md={3}>
                       <Typography
                         sx={{
-                          fontFamily: "cursive",
+                          fontFamily: "sans-serif",
                           fontSize: "22px",
                           color: "#3D405B",
                           fontWeight: "bold",
@@ -95,7 +95,7 @@ const AdoptPet = () => {
                           m: "12px",
                           backgroundColor: "#E07A5F",
                           color: "#F4F1DE",
-                          fontFamily: "cursive",
+                          fontFamily: "sans-serif",
                           textTransform: "lowercase",
                         }}
                       >
@@ -112,7 +112,7 @@ const AdoptPet = () => {
                     >
                       <Typography
                         sx={{
-                          fontFamily: "cursive",
+                          fontFamily: "sans-serif",
                           fontSize: "14px",
                           color: "#3D405B",
                           fontWeight: "bold",

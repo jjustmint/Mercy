@@ -10,9 +10,8 @@ const bcrypt = require("bcrypt");
 const cors = require("cors");
 
 const auth = require("./middleware/auth")
-const Login = require("./routes/Login")
-const Register = require("./routes/register")
-const Pet = require("./routes/Pet")
+const Pet = require("./controllers/Pet")
+const mainRouter = require("./routes/index")
 
 app.use(express.json());
 app.use(cors({
@@ -23,11 +22,7 @@ app.use(cors({
 app.use(cookieParser());
 
 app.use(bodyParser.json({ type: "application/json" }));
-
-app.post("/register", Register);
-
-app.post("/login", Login);
-
+app.use(mainRouter);
 app.get("/pet/:id", auth, Pet)
 
 app.listen(port, () => {

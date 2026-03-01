@@ -17,7 +17,7 @@ const MercyFound = () => {
               <Typography
                 sx={{
                   fontSize: { xs: "40px", md: "60px" },
-                  fontFamily: "cursive",
+                  fontFamily: "sans-serif",
                   color: "#3D405B",
                 }}
               >
@@ -31,7 +31,7 @@ const MercyFound = () => {
               <Typography
                 sx={{
                   fontSize: { xs: "18px", md: "22px" },
-                  fontFamily: "cursive",
+                  fontFamily: "sans-serif",
                   color: "#3D405B",
                   maxWidth: { md: "800px" },
                 }}

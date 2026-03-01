@@ -23,7 +23,7 @@ const Voluteer = () => {
                 <Typography
                   mb={4}
                   style={{
-                    fontFamily: "cursive",
+                    fontFamily: "sans-serif",
                     // fontWeight: "bold",
                     fontSize: "60px",
                     color: "#3D405B",
@@ -34,7 +34,7 @@ const Voluteer = () => {
                 <Typography
                   sx={{
                     alignItems: "center",
-                    fontFamily: "cursive",
+                    fontFamily: "sans-serif",
                     fontSize: "20px",
                     color: "#3D405B",
                     marginBottom: "80px",
@@ -77,7 +77,7 @@ const Voluteer = () => {
               <Typography
                 mb={4}
                 style={{
-                  fontFamily: "cursive",
+                  fontFamily: "sans-serif",
                   // fontWeight: "bold",
                   fontSize: "60px",
                   color: "#3D405B",
@@ -108,7 +108,7 @@ const Voluteer = () => {
               <Typography
                 sx={{
                   alignItems: "center",
-                  fontFamily: "cursive",
+                  fontFamily: "sans-serif",
                   fontSize: "20px",
                   color: "#3D405B",
                 }}

@@ -43,14 +43,14 @@ body{
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
 }
-/*fontFamily: "cursive",
+/*fontFamily: "sans-serif",
 color: "#F4F1DE",
 margin: "18px",
 fontWeight: "bold"*/
 /* Links inside the dropdown */
 .dropdown-content a {
     float: none;
-    font-family: cursive;
+    font-family: sans-serif;
     font-size: medium;
     color: #F4F1DE;
     padding: 12px 16px;

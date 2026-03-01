@@ -54,6 +54,7 @@ const Navbar = () => {
         className="BotNav"
         direction="row"
         justifyContent="center"
+        alignItems="center"
         sx={{
           backgroundColor: "#e07a5f",
           height: "68px",
@@ -64,14 +65,17 @@ const Navbar = () => {
         <div class="dropdown">
           <button
             class="dropbtn"
+            onClick={() => {
+              window.location.href = "/";
+            }}
             style={{
               textDecoration: "none",
-              fontFamily: "cursive",
+              fontFamily: "sans-serif",
               color: "#F4F1DE",
               fontWeight: "bold",
             }}
           >
-            ADOPT & DONATE
+            HOME
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
@@ -85,7 +89,7 @@ const Navbar = () => {
             class="dropbtn"
             style={{
               textDecoration: "none",
-              fontFamily: "cursive",
+              fontFamily: "sans-serif",
               color: "#F4F1DE",
               fontWeight: "bold",
             }}
@@ -103,7 +107,7 @@ const Navbar = () => {
             class="dropbtn"
             style={{
               textDecoration: "none",
-              fontFamily: "cursive",
+              fontFamily: "sans-serif",
               color: "#F4F1DE",
               fontWeight: "bold",
             }}
@@ -116,18 +120,23 @@ const Navbar = () => {
             <a href="/CatBreeds">Cat Breeds</a>
           </div>
         </div>
-        <Link
-          to="/Other"
+        <button
+        onClick={() => {
+          window.location.href = "/Other"
+        }}
           style={{
+            border: "none",
+            fontSize: "16px",
+            backgroundColor: "transparent",
+            margin: "22px 16px",
             textDecoration: "none",
-            fontFamily: "cursive",
+            fontFamily: "sans-serif",
             color: "#F4F1DE",
-            margin: "22px",
             fontWeight: "bold",
           }}
         >
           OTHER TYPES
-        </Link>
+        </button>
       </Stack>
     </Stack>
   );

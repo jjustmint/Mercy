@@ -82,7 +82,7 @@ const Register = ({ setIsLogin = () => {}, setStatus = () => {} }) => {
       display="flex"
       justifyContent="center"
       sx={{
-        fontFamily: "cursive",
+        fontFamily: "sans-serif",
       }}
     >
       <Box
@@ -156,7 +156,7 @@ const Register = ({ setIsLogin = () => {}, setStatus = () => {} }) => {
             width: "100%",
             padding: ".25rem",
             fontSize: "1.5rem",
-            fontFamily: "cursive",
+            fontFamily: "sans-serif",
             backgroundColor: "#F2CC8F",
             borderRadius: "8px",
             border: "none",

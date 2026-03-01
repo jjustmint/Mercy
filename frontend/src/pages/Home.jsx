@@ -73,7 +73,7 @@ const Home = () => {
                   <Typography
                     align="center"
                     sx={{
-                      fontFamily: "cursive",
+                      fontFamily: "sans-serif",
                       fontWeight: "bold",
                       fontSize: "24px",
                       color: "#3D405B",
@@ -115,7 +115,7 @@ const Home = () => {
                   <Typography
                     align="center"
                     sx={{
-                      fontFamily: "cursive",
+                      fontFamily: "sans-serif",
                       fontWeight: "bold",
                       fontSize: "24px",
                       color: "#3D405B",
@@ -157,7 +157,7 @@ const Home = () => {
                   <Typography
                     align="center"
                     sx={{
-                      fontFamily: "cursive",
+                      fontFamily: "sans-serif",
                       fontWeight: "bold",
                       fontSize: "24px",
                       color: "#3D405B",
@@ -199,7 +199,7 @@ const Home = () => {
                   <Typography
                     align="center"
                     sx={{
-                      fontFamily: "cursive",
+                      fontFamily: "sans-serif",
                       fontWeight: "bold",
                       fontSize: "24px",
                       color: "#3D405B",
@@ -215,7 +215,7 @@ const Home = () => {
             sx={{
               display: "flex",
               justifyContent: "center",
-              fontFamily: "cursive",
+              fontFamily: "sans-serif",
               fontWeight: "bold",
               fontSize: "30px",
               color: "#3D405B",
