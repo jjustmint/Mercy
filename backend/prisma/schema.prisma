@@ -1,0 +1,39 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+model contact {
+  contact_id Int     @id
+  instagram  String? @db.VarChar(256)
+  facebook   String? @db.VarChar(256)
+  tel        String? @db.VarChar(256)
+  pets       pets[]
+}
+
+model pets {
+  id         Int     @id @default(autoincrement())
+  name       String? @db.VarChar(256)
+  gender     String? @db.VarChar(256)
+  age        String? @db.VarChar(256)
+  type       String? @db.VarChar(256)
+  breed      String? @db.VarChar(256)
+  info       String? @db.Text
+  address    String? @db.VarChar(256)
+  contact_id Int
+  img        String? @db.VarChar(256)
+  contact    contact @relation(fields: [contact_id], references: [contact_id], onDelete: NoAction, onUpdate: NoAction, map: "contact_id")
+
+  @@index([contact_id], map: "contact_id")
+}
+
+model users {
+  id              Int    @id @default(autoincrement())
+  username        String @db.VarChar(256)
+  hashed_password String @db.VarChar(256)
+  email           String @db.VarChar(256)
+}

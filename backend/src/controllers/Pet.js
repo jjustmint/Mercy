@@ -1,4 +1,4 @@
-const connection = require ('../database');
+
 
 const Pet = async (req,res) => {
     const type = req.body.type;
