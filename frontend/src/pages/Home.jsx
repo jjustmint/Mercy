@@ -1,7 +1,6 @@
 import React from "react";
 import { Box, Grid, Stack, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import PetAvaliable from "../components/PetAvaliable";
 import DogData from "../dog.json"
 import { Card, CardMedia, CardContent} from "@mui/material";
 
@@ -224,40 +223,57 @@ const Home = () => {
           >
             Pets Available for adoption nearby
           </Typography>
-          <Box className="AvaliableCard">
-            <Grid container direction="row" spacing={2}>
-              {DogData.slice(0, 4).map((data) => {
+          <Box className="AvaliableCard"
+            sx={{
+              display: "flex",
+              alignSelf: "center",
+              height: "330px",
+              width: {sm: "500px", md:"990px"},
+              display: "flex",
+              overflowX: "auto",
+              gap: 2,
+              padding: "20px",
+              borderRadius: "20px"
+            }}
+          >
+              {DogData.map((data) => {
                 return (
-                  <Grid
-                    item
-                    md={3}
-                    xs={6}
+                  <div
                     key={data.id}
                     sx={{
                       marginTop: "40px",
-                      flexDirectio: "row",
-                      justifyContent: "center",
-                      alignContent: "center",
+                      minWidth: 200,
+                      flexShrink: 0,
                     }}
                   >
-                    <Card>
+                    <Card
+                    sx={{
+                      minWidth: 200,
+                      flexShrink: 0,
+                    }}
+                    >
                       <CardMedia
                         component="img"
                         height="200"
                         image={data.img}
                         alt="404 not found"
                       />
-                      <CardContent>
+                      <CardContent
+                        sx={{
+                          backgroundColor: "#81B29A",
+                          fontFamily: "sans-serif",
+                          color: "#3D405B"
+                        }}
+                      >
                         {data.name}
                         <Typography variant="body2" color="text.secondary">
                           {/* {data.info} */}
                         </Typography>
                       </CardContent>
                     </Card>
-                  </Grid>
+                  </div>
                 );
               })}
-            </Grid>
           </Box>
         </Stack>
       </Box>
